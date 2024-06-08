@@ -1,0 +1,69 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  padding: 20px;
+}
+
+.container>div:first-child {
+    width: 100%;
+}
+
+
+.grid-container {
+    width: 100%;
+}
+
+.mat-grid-list {
+    width: 100%;
+}
+
+.mat-grid-tile {
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.mat-grid-tile img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    object-fit: cover;
+    aspect-ratio: 1/1;
+}
+
+.mat-grid-tile-footer {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 0 0 8px 8px;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.toggle-view {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  .toggle-view button {
+    color: #555;
+  }
+  
+  .toggle-view button.active {
+    color: #333; /* Color más oscuro para el botón activo */
+  }
+  
+  .list, .grid-container {
+    margin-top: 50px; /* Ajusta el margen para que los elementos no se solapen con los botones */
+  }

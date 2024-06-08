@@ -1,0 +1,29 @@
+.breed-detail-container {
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        height: auto;
+        max-height: 400px;
+        /* Tamaño máximo para la imagen */
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .details {
+        margin-top: 16px;
+
+        p {
+            margin-bottom: 8px;
+        }
+    }
+}
+
+.back-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }

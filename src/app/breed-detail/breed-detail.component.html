@@ -1,0 +1,33 @@
+<div class="breed-detail-container" *ngIf="breed">
+    
+    <button mat-icon-button class="back-button" (click)="goBack()">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+
+    <h2>{{ breed.name }}</h2>
+    <div>
+        <img [src]="breed.image$" *ngIf="breed.image$; else noImage" alt="Breed Image">
+        <ng-template #noImage>
+            <div>No image available</div>
+        </ng-template>
+    </div>
+    <div class="details">
+        <p><strong>Breed ID:</strong> {{ breed.id }}</p>
+        <p><strong>Bred For:</strong> {{ breed.bred_for }}</p>
+        <p><strong>Breed Group:</strong> {{ breed.breed_group }}</p>
+        <p><strong>Life Span:</strong> {{ breed.life_span }}</p>
+        <p><strong>Temperament:</strong> {{ breed.temperament }}</p>
+        <p><strong>Origin:</strong> {{ breed.origin }}</p>
+    </div>
+    <button (click)="toggleDetails()">Toggle Details</button>
+    <div *ngIf="showAllDetails">
+        <p><strong>Weight:</strong> {{ breed.weight }}</p>
+        <p><strong>Height:</strong> {{ breed.height }}</p>
+        <p><strong>Reference Image ID:</strong> {{ breed.reference_image_id }}</p>
+    </div>
+
+</div>
+
+<div *ngIf="!breed" class="container">
+    <mat-spinner diameter="50"></mat-spinner>
+</div>
