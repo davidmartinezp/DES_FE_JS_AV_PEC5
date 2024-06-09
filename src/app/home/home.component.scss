@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 600px) {
     .container {
-        width: 100%;
+        width: 90%;
     }
 }
 
@@ -61,9 +61,13 @@
   }
   
   .toggle-view button.active {
-    color: #333; /* Color más oscuro para el botón activo */
+    color: #333; 
   }
   
   .list, .grid-container {
-    margin-top: 50px; /* Ajusta el margen para que los elementos no se solapen con los botones */
+    margin-top: 50px; 
   }
+
+  .grid-container mat-grid-tile {
+    cursor: pointer;
+}

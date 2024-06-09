@@ -1,13 +1,16 @@
 .breed-detail-container {
     text-align: center;
+    width: 90%;
+    margin: 0 auto;
 
     img {
+        
         max-width: 100%;
         height: auto;
         max-height: 400px;
-        /* Tamaño máximo para la imagen */
         display: block;
         margin: 0 auto;
+        margin-top: 40px;
         border: 1px solid #ccc;
         border-radius: 8px;
         box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
